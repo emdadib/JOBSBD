@@ -12,5 +12,7 @@ namespace JOBSBD.Data
             : base(options)
         {
         }
+
+
     }
 }

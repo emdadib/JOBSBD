@@ -1,0 +1,66 @@
+﻿@model JOBSBD.Models.PersonalDetail
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>PersonalDetail</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.FullName)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.FullName)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.FathersName)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.FathersName)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.MothersName)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.MothersName)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.DateOfBirth)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.DateOfBirth)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Religion)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Religion)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Nationality)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Nationality)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.MaritalStatus)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.MaritalStatus)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.UserPicture)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.UserPicture)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.PersonalID">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>
